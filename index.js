@@ -1,3 +1,5 @@
+import { ref } from 'vue'
+
 const app = Vue.createApp({
     setup() {
         const leftDrawerOpen = ref(false)
