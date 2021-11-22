@@ -1,6 +1,8 @@
 
 const app = Vue.createApp({
-    setup() { }
+    setup() {
+        return {}
+    }
 })
 
 app.use(Quasar)
