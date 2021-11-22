@@ -1,15 +1,16 @@
 
 const app = Vue.createApp({
-    setup() {
+    data() {
         return {
             leftDrawerOpen: false,
-            methods: {
-                toggleLeftDrawer() {
-                    leftDrawerOpen.value = !leftDrawerOpen.value
-                }
-            }
+        }
+    },
+    methods: {
+        toggleLeftDrawer() {
+            leftDrawerOpen.value = !leftDrawerOpen.value
         }
     }
+
 })
 
 app.use(Quasar)
