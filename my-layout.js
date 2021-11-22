@@ -9,7 +9,7 @@ export default {
     }
   },
   template:`
-    <q-layout view="hHh lpR fFf">
+    <q-layout view="hhh lpr fff">
 
     <q-header elevated class="bg-primary text-white">
       <q-toolbar>
@@ -19,14 +19,16 @@ export default {
           <q-avatar>
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
           </q-avatar>
-            Title
+            Titulo
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
       <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
+        1<br>
+        2<br>
         <!-- drawer content -->
-    </q-drawer>
+      </q-drawer>
 
       <q-page-container>
         <router-view />
