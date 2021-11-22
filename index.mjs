@@ -1,16 +1,6 @@
-import { ref } from 'vue'
 
 const app = Vue.createApp({
-    setup() {
-        const leftDrawerOpen = ref(false)
-
-        return {
-            leftDrawerOpen,
-            toggleLeftDrawer() {
-                leftDrawerOpen.value = !leftDrawerOpen.value
-            }
-        }
-    }
+    setup() { }
 })
 
 app.use(Quasar)
