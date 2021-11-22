@@ -1,5 +1,15 @@
-<template>
-  <q-layout view="hHh lpR fFf">
+export default {
+  data() {
+    return { leftDrawerOpen: false }
+  },
+  methods: {
+    toggleLeftDrawer() {
+      console.log('click')
+      this.leftDrawerOpen = !this.leftDrawerOpen
+    }
+  },
+  template:`
+    <q-layout view="hHh lpR fFf">
 
     <q-header elevated class="bg-primary text-white">
       <q-toolbar>
@@ -22,22 +32,7 @@
         <router-view />
       </q-page-container>
 
-  </q-layout>
-</template>
+    </q-layout>
+  `
 
-<script>
-  import {ref} from 'vue'
-
-  export default {
-    setup() {
-      const leftDrawerOpen = ref(false)
-
-      return {
-        leftDrawerOpen,
-        toggleLeftDrawer () {
-          leftDrawerOpen.value = !leftDrawerOpen.value
-        }
-      }
-    }
   }
-</script>

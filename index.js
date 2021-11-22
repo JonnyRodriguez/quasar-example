@@ -7,4 +7,4 @@ const app = Vue.createApp({
 app.use(Quasar)
 app.mount('#q-app')
 
-console.log("hello")
+console.log("hello2")
