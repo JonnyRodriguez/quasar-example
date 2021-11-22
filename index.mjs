@@ -1,7 +1,12 @@
 
 const app = Vue.createApp({
     setup() {
-        return {}
+        return {
+            leftDrawerOpen = false,
+            toggleLeftDrawer() {
+                leftDrawerOpen.value = !leftDrawerOpen.value
+            }
+        }
     }
 })
 
