@@ -8,49 +8,16 @@
 
 <body>
 	<div id="q-app">
-		<q-layout view="hHh lpR fFf">
+		<my-layout></my-layout>
+	</div>
 
-			<q-header elevated class="bg-primary text-white">
-				<q-toolbar>
-					<q-btn dense flat round icon="menu" @click="toggleLeftDrawer"></q-btn>
+	<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/quasar@2.3.3/dist/quasar.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/quasar@2.3.3/dist/lang/es.umd.prod.js"></script>
+	<script src="https://unpkg.com/http-vue-loader"></script>
 
-					<q-toolbar-title>
-						<q-avatar>
-							<img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
-            </q-avatar>
-            Title
-          </q-toolbar-title>
-        </q-toolbar>
-      </q-header>
+	<script type="module" src="/index.mjs></script>
 
-      <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
-        <!-- drawer content -->
-      </q-drawer>
-
-      <q-page-container>
-        <router-view />
-      </q-page-container>
-
-    </q-layout>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/quasar@2.3.3/dist/quasar.umd.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/quasar@2.3.3/dist/lang/es.umd.prod.js"></script>
-
-    <script>
-      const app = Vue.createApp({
-        setup () {
-          return {}
-        }
-      })
-
-      app.use(Quasar)
-      app.mount('#q-app')
-    </script>
-
-  </body>
-</html>
 </body>
 
 </html>

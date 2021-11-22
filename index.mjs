@@ -1,18 +1,10 @@
-
 const app = Vue.createApp({
-    data() {
-        return {
-            leftDrawerOpen: false,
-        }
-    },
-    methods: {
-        toggleLeftDrawer() {
-            leftDrawerOpen.value = !leftDrawerOpen.value
-        }
-    }
-
+  components: {
+    'my-layout': httpVueLoader('my-layout.vue')
+  },
+  setup() { return {} }
 })
-
 app.use(Quasar)
-Quasar.lang.set(Quasar.lang.es)
 app.mount('#q-app')
+
+console.log("hello")
